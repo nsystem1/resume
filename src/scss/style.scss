@@ -4,10 +4,12 @@ body {
 	background-color: transparent;
 	font-size: 16px;
 	line-height: 1.4;
+	font-family: 'Didact Gothic', sans-serif;
 }
 
 * {
 	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
 }
 
 @import 'structure';

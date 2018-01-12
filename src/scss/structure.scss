@@ -1,5 +1,6 @@
-$pad: 5px;
+$pad: 3px;
 $margin: 3px;
+$rad: 3px;
 
 #wrapper {
 	position: absolute;
@@ -13,29 +14,71 @@ $margin: 3px;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	align-content: center;
+	align-items: center;
 }
 
 .flex-item {
 	flex: 1;
 }
 
+a {
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.left-align {
+	text-align: left !important;
+}
+
 .right-align {
-	text-align: right;
+	text-align: right !important;
 }
 
 .sheet {
-	margin: 50px auto;
+	margin: ($margin * 15) auto;
 	position: relative;
 	max-width: 900px;
-	padding: $pad * 8;
+	padding: $pad * 10;
 }
 
 .head {
 	border-bottom: 2px solid;
+	h1 {
+		font-size: 2.1rem;
+		font-weight: 700;
+	}
+	.download-btn {
+		font-size: 1.2rem;
+		padding: ($pad * 2) ($pad * 6);
+		border-radius: $rad;
+	}
+}
+
+.contact {
+	margin-top: $margin * 3;
+	.flex-item {
+		text-align: center;
+	}
+	.contact-item {
+		display: inline-block;
+		text-align: center;
+		font-size: 1.1rem;
+		font-weight: 500;
+		padding: $pad ($pad * 3);
+		border-radius: $rad;
+	}
+}
+
+.pitch {
+	margin-top: $margin * 5;
+	p {
+		font-size: 1.19rem;
+		padding: $pad;
+	}
 }
 
 .section {
+	margin-top: $margin * 6;
 	h2 {
 		font-size: 2rem;
 		border-bottom: 2px dashed;

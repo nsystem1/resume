@@ -10,25 +10,42 @@ const Resume = () => {
 						<h1>Udo Nkwocha</h1>
 					</div>
 					<div className="flex-item right-align">
-						<button>Download PDF</button>
+						<a className="download-btn">
+							<i className="mdi mdi-file-pdf" /> Download PDF
+						</a>
 					</div>
 				</section>
 				<section className="flex contact">
-					<span className="flex-item contact-item">
-						<a>website</a>
+					<span className="flex-item left-align">
+						<a className="contact-item" href="http://udoka.me/">
+							<i className="mdi mdi-earth" />
+							&nbsp;http://udoka.me/
+						</a>
 					</span>
-					<span className="flex-item contact-item">
-						<a>github</a>
+					<span className="flex-item">
+						<a className="contact-item" href="mailto:writeudo@gmail.com">
+							<i className="mdi mdi-gmail" />
+							&nbsp;writeudo@gmail.com
+						</a>
 					</span>
-					<span className="flex-item contact-item">
-						<a>email</a>
+					<span className="flex-item">
+						<a className="contact-item" href="https://github.com/Udokah">
+							<i className="mdi mdi-github-circle" />
+							&nbsp;/udoka
+						</a>
 					</span>
-					<span className="flex-item contact-item">
-						<a>linkedin</a>
+					<span className="flex-item right-align">
+						<a className="contact-item" href="https://ng.linkedin.com/in/thisisudo">
+							<i className="mdi mdi-linkedin-box" />
+							&nbsp;/thisisudo
+						</a>
 					</span>
 				</section>
 				<section className="pitch">
-					<p>I am awesome!</p>
+					<p>
+						Passionate about learning and building stuff for the web. Able to understand business requirements, prioritise work based on highest business value and work with teams to solve
+						problems.
+					</p>
 				</section>
 				<section className="section">
 					<h2>Experience</h2>

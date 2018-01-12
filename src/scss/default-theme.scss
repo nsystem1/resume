@@ -1,8 +1,11 @@
 .default-theme {
 	$background: #eee;
-	$border: #2c3e50;
+	$border: #444452;
+	$color: #33333e;
+	$hover: lighten($color, 69%);
 
 	background-color: $background;
+	color: $color;
 
 	.sheet {
 		background-color: #fff;
@@ -11,6 +14,18 @@
 
 	.head {
 		border-color: $border;
+		padding-bottom: $pad * 1.2;
+	}
+
+	a {
+		color: $color;
+		&:hover {
+			background-color: $hover;
+		}
+	}
+
+	.contact-item {
+		color: $color;
 	}
 
 	.section {
