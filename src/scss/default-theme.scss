@@ -1,2 +1,27 @@
 .default-theme {
+	$background: #eee;
+	$border: #2c3e50;
+
+	background-color: $background;
+
+	.sheet {
+		background-color: #fff;
+		box-shadow: 0 0 10px #ccc;
+	}
+
+	.head {
+		border-color: $border;
+	}
+
+	.section {
+		h2 {
+			border-color: $border;
+		}
+		.date {
+			color: #ccc;
+		}
+		.tag-item {
+			border-color: blue;
+		}
+	}
 }

@@ -1,0 +1,60 @@
+$pad: 5px;
+$margin: 3px;
+
+#wrapper {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	min-height: 100%;
+}
+
+.flex {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-content: center;
+}
+
+.flex-item {
+	flex: 1;
+}
+
+.right-align {
+	text-align: right;
+}
+
+.sheet {
+	margin: 50px auto;
+	position: relative;
+	max-width: 900px;
+	padding: $pad * 8;
+}
+
+.head {
+	border-bottom: 2px solid;
+}
+
+.section {
+	h2 {
+		font-size: 2rem;
+		border-bottom: 2px dashed;
+	}
+	article {
+		margin-right: $margin * 8;
+	}
+	h3 {
+		font-size: 1rem;
+		font-weight: bold;
+	}
+	.date {
+		float: right;
+	}
+	p {
+		clear: both;
+	}
+	.tag-item {
+		display: inline-block;
+		border: 1px solid;
+	}
+}
