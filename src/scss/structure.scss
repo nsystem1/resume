@@ -2,6 +2,7 @@ $pad: 3px;
 $margin: 3px;
 $rad: 3px;
 $textSize: 1rem;
+$pageSize: 900px;
 
 #wrapper {
 	position: absolute;
@@ -9,6 +10,7 @@ $textSize: 1rem;
 	left: 0;
 	width: 100%;
 	min-height: 100%;
+	transition: 0.4s;
 }
 
 .flex {
@@ -19,7 +21,7 @@ $textSize: 1rem;
 }
 
 .flex-item {
-	flex: 1;
+	display: inline-block;
 }
 
 a {
@@ -27,18 +29,29 @@ a {
 	text-decoration: none;
 }
 
-.left-align {
-	text-align: left !important;
+.controls {
+	position: absolute;
+	top: $margin * 2;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 100%;
+	max-width: $pageSize;
+	padding: $pad;
+	text-align: right;
 }
 
-.right-align {
-	text-align: right !important;
+.toggle-theme {
+	display: inline-flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 115px;
 }
 
 .sheet {
-	margin: ($margin * 15) auto;
+	margin: ($margin * 20) auto;
 	position: relative;
-	max-width: 900px;
+	max-width: $pageSize;
 	padding: $pad * 20;
 }
 
@@ -62,6 +75,7 @@ a {
 		text-align: center;
 	}
 	.contact-item {
+		transition: 0.3s;
 		display: inline-block;
 		white-space: nowrap;
 		text-align: center;
@@ -85,6 +99,10 @@ a {
 	.flex {
 		align-items: baseline;
 	}
+	.flex-item {
+		flex: 1;
+		display: block;
+	}
 	h2 {
 		font-size: 1.8rem;
 		font-weight: 600;
@@ -93,7 +111,9 @@ a {
 	}
 	article {
 		margin-top: $margin * 5;
-		margin-right: $margin * 8;
+		&:first-of-type {
+			margin-right: $margin * 8;
+		}
 	}
 	h3 {
 		font-size: 1.214rem;
