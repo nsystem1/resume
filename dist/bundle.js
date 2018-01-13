@@ -61,7 +61,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "5b1ff4222c11aae4089a"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "cf2497731a6bab126a03"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -29801,7 +29801,7 @@ var Resume = function (_React$Component) {
 							{ className: 'flex-item' },
 							_react2.default.createElement(
 								'a',
-								{ className: 'download-btn' },
+								{ className: 'download-btn', href: './public/resume.pdf' },
 								_react2.default.createElement('i', { className: 'mdi mdi-file-pdf' }),
 								' Download PDF'
 							)
