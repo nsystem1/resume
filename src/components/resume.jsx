@@ -42,7 +42,7 @@ class Resume extends React.Component {
 							<h1>Udoka Kenneth Nkwocha</h1>
 						</div>
 						<div className="flex-item">
-							<a className="download-btn">
+							<a className="download-btn" href="./public/resume.pdf">
 								<i className="mdi mdi-file-pdf" /> Download PDF
 							</a>
 						</div>
