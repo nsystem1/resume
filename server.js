@@ -10,6 +10,8 @@ const app = express();
 const ENVIRONMENT = process.env.NODE_ENV;
 const port = 9090;
 
+app.use(express.static('public'));
+
 if (ENVIRONMENT === 'development') {
 	// Attach webpack dev server to running app
 	(serverInstance => {
@@ -24,7 +26,7 @@ if (ENVIRONMENT === 'development') {
 	})(app);
 }
 
-app.get('*', (req, res) => {
+app.get('/', (req, res) => {
 	res.sendFile(`${__dirname}/index.html`);
 });
 
