@@ -33,10 +33,10 @@
 			border-color: $border;
 		}
 		.date {
-			color: lighten($color, 40%);
+			color: darken($color, 40%);
 		}
 		.tag-item {
-			border-color: lighten($color, 40%);
+			border-color: darken($color, 40%);
 		}
 	}
 }

@@ -1,21 +1,32 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+const STORE_KEY = 'USE_DARK_MODE';
+
 class Resume extends React.Component {
 	state = {
-		darkTheme: false
+		checkedInput: false
 	};
 
-	handleToggle = () => this.setState({ darkTheme: !this.state.darkTheme });
+	componentWillMount() {
+		const checked = localStorage.getItem(STORE_KEY) || false;
+		this.setState({ checkedInput: JSON.parse(checked) });
+	}
+
+	handleToggle = () => {
+		const checkedInput = !this.state.checkedInput;
+		localStorage.setItem(STORE_KEY, checkedInput);
+		this.setState({ checkedInput });
+	};
 
 	render() {
 		return (
-			<div id="wrapper" className={this.state.darkTheme ? 'dark-theme' : 'default-theme'}>
+			<div id="wrapper" className={this.state.checkedInput ? 'dark-theme' : 'default-theme'}>
 				<section className="controls">
 					<div className="toggle-theme">
 						<i className="mdi mdi-24px mdi-white-balance-sunny" />
 						<label className="switch">
-							<input onChange={this.handleToggle} type="checkbox" />
+							<input checked={this.state.checkedInput} onChange={this.handleToggle} type="checkbox" />
 							<span className="slider" />
 						</label>
 						<i className="mdi mdi-24px mdi-weather-night" />
