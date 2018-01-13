@@ -36,7 +36,7 @@ const Experience = () => {
 					</h3>
 					<p>
 						Migrated core company products - dashboards and 3rd party embeddable widgets - from Ruby (Rails) to Javascript (React) while supporting multiple languages English and German.
-						Created charts using D3 give more insights to customers.
+						Created charts using D3 provide more insights to customers.
 					</p>
 					<div className="tags">
 						<span className="tag-item">NodeJS</span>
