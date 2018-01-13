@@ -1,6 +1,6 @@
 git push origin master &&
 
-git checkout -b gh-pages &&
+git checkout gh-pages &&
 
 git merge master &&
 
