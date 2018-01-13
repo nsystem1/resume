@@ -61,7 +61,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "cf2497731a6bab126a03"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "8310848ab9cfc9160686"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -29996,7 +29996,7 @@ var Experience = function Experience() {
 				_react2.default.createElement(
 					'p',
 					null,
-					'Migrated core company products - dashboards and 3rd party embeddable widgets - from Ruby (Rails) to Javascript (React) while supporting multiple languages English and German. Created charts using D3 give more insights to customers.'
+					'Migrated core company products - dashboards and 3rd party embeddable widgets - from Ruby (Rails) to Javascript (React) while supporting multiple languages English and German. Created charts using D3 provide more insights to customers.'
 				),
 				_react2.default.createElement(
 					'div',
