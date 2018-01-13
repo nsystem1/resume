@@ -11,8 +11,8 @@ const Experience = () => {
 						Software Engineer (Front-End) at Zalando SE <small className="date">Feb 2017 - Present</small>
 					</h3>
 					<p>
-						Working on tools to increase developer productivity. Building apps with using Micro-service for frontend architecture. Setup monitoring and tracking to gain more insights &
-						visibility into user behaviour.
+						Working on tools to increase developer productivity. Building apps using Micro-service for frontend architecture. Setup monitoring and tracking to gain more insights & visibility
+						into user behaviour.
 					</p>
 					<div className="tags">
 						<span className="tag-item">NodeJS</span>
@@ -105,7 +105,7 @@ const Experience = () => {
 						Frontend Developer at Botosoft Tech LTD <small className="date">Jun 2011 - Aug 2014</small>
 					</h3>
 					<p>
-						Onsite consulting. I worked closely with the designers to create awesome user interfaces offering an intuitive user experience. My roles involved tranforming designs and sketches
+						Onsite consulting. I worked closely with UI designers to create awesome user interfaces offering an intuitive user experience. My roles involved tranforming designs and sketches
 						to semantic HTML/CSS code equivalent.
 					</p>
 					<div className="tags">

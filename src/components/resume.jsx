@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import Experience from 'components/experience';
 import Education from 'components/education';
 import Projects from 'components/projects';
+import Awards from 'components/awards';
 
 const STORE_KEY = 'USE_DARK_MODE';
 
@@ -81,6 +82,7 @@ class Resume extends React.Component {
 					<Experience />
 					<Education />
 					<Projects />
+					<Awards />
 				</main>
 			</div>
 		);
