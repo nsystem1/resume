@@ -10,7 +10,7 @@ const Awards = () => {
 					<h3>
 						Google Developer Groups (GDG) Lagos Hackathon <small className="date">2014</small>
 					</h3>
-					<p>Built an app that allowed multiple save money together towards a common goal.</p>
+					<p>Built an app that allowed multiple people save money together in a digital wallet to fund a common goal.</p>
 				</article>
 				<article className="flex-item" />
 			</div>
