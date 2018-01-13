@@ -61,7 +61,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "8310848ab9cfc9160686"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "e28e4855f58fed228a19"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -30767,7 +30767,7 @@ var Awards = function Awards() {
 				_react2.default.createElement(
 					'p',
 					null,
-					'Built an app that allowed multiple save money together towards a common goal.'
+					'Built an app that allowed multiple people save money together in a digital wallet to fund a common goal.'
 				)
 			),
 			_react2.default.createElement('article', { className: 'flex-item' })
