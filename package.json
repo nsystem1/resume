@@ -6,7 +6,7 @@
 	"scripts": {
 		"dev": "NODE_ENV=development nodemon server.js",
 		"build": "NODE_ENV=production rm -rf builds && webpack --config webpack.config.js --progress --colors",
-		"deploy": "git checkout -b gh-pages && npm run build && git push origin gh-pages && rm -rf builds && git checkout master"
+		"deploy": "sh deploy.sh"
 	},
 	"repository": {
 		"type": "git",

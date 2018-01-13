@@ -35,10 +35,10 @@ const config = {
 
 	output: {
 		libraryTarget: 'var',
-		path: `${__dirname}/builds/`,
+		path: `${__dirname}/dist/`,
 		filename: '[name].js',
 		chunkFilename: '[id].js',
-		publicPath: '/builds/'
+		publicPath: '/dist/'
 	},
 
 	plugins: [
