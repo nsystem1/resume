@@ -7,7 +7,7 @@ const Resume = () => {
 			<main className="sheet">
 				<section className="flex head">
 					<div className="flex-item">
-						<h1>Udo Nkwocha</h1>
+						<h1>Udoka Kenneth Nkwocha</h1>
 					</div>
 					<div className="flex-item right-align">
 						<a className="download-btn">
@@ -54,7 +54,10 @@ const Resume = () => {
 							<h3>
 								Front-End Engineer Facebook <small className="date">2018-2020</small>
 							</h3>
-							<p>stuff I did there</p>
+							<p>
+								I was a part of the team that used the MEAN stack (MongoDB, Express.js, AngularJS, and Node.js) to develop an internal application to help Andela track and manage ed support
+								Andela's Now We Give initiative, a program that offers to build websites for clients in exchange for charitable donations.
+							</p>
 							<div className="tags">
 								<span className="tag-item">css</span>
 								<span className="tag-item">html</span>
@@ -64,7 +67,10 @@ const Resume = () => {
 							<h3>
 								Front-End Engineer Facebook <small className="date">2018-2020</small>
 							</h3>
-							<p>stuff I did there</p>
+							<p>
+								I was a part of the team that used the MEAN stack (MongoDB, Express.js, AngularJS, and Node.js) to develop an internal applicatioor clients in exchange for charitable
+								donations.
+							</p>
 							<div className="tags">
 								<span className="tag-item">css</span>
 								<span className="tag-item">html</span>

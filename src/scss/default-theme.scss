@@ -33,10 +33,10 @@
 			border-color: $border;
 		}
 		.date {
-			color: #ccc;
+			color: lighten($color, 40%);
 		}
 		.tag-item {
-			border-color: blue;
+			border-color: lighten($color, 40%);
 		}
 	}
 }

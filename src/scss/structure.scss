@@ -1,6 +1,7 @@
 $pad: 3px;
 $margin: 3px;
 $rad: 3px;
+$textSize: 1rem;
 
 #wrapper {
 	position: absolute;
@@ -62,7 +63,7 @@ a {
 	.contact-item {
 		display: inline-block;
 		text-align: center;
-		font-size: 1.1rem;
+		font-size: 0.96rem;
 		font-weight: 500;
 		padding: $pad ($pad * 3);
 		border-radius: $rad;
@@ -72,32 +73,58 @@ a {
 .pitch {
 	margin-top: $margin * 5;
 	p {
-		font-size: 1.19rem;
+		font-size: $textSize;
 		padding: $pad;
 	}
 }
 
 .section {
 	margin-top: $margin * 6;
+	.flex {
+		align-items: baseline;
+	}
 	h2 {
-		font-size: 2rem;
+		font-size: 1.8rem;
+		font-weight: 600;
+		padding-bottom: $pad * 2;
 		border-bottom: 2px dashed;
 	}
 	article {
+		margin-top: $margin * 5;
 		margin-right: $margin * 8;
 	}
 	h3 {
-		font-size: 1rem;
-		font-weight: bold;
+		font-size: 1.214rem;
+		font-weight: 700;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
 	}
 	.date {
-		float: right;
+		font-size: 0.88rem;
+		font-weight: 700;
 	}
 	p {
-		clear: both;
+		font-size: $textSize;
+		display: block;
+		margin-top: $margin * 2;
+		line-height: 1.5;
+	}
+	.tags {
+		display: block;
+		margin-top: $margin * 2;
 	}
 	.tag-item {
 		display: inline-block;
+		text-decoration: none;
 		border: 1px solid;
+		padding: ($pad / 7) ($pad * 4);
+		font-size: 0.86rem;
+		margin-left: $margin * 3;
+		border-radius: $rad;
+		font-weight: normal;
+		&:first-of-type {
+			margin-left: 0;
+		}
 	}
 }
