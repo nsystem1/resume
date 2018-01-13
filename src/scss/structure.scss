@@ -2,7 +2,7 @@ $pad: 3px;
 $margin: 3px;
 $rad: 3px;
 $textSize: 1rem;
-$pageSize: 900px;
+$pageSize: 1100px;
 
 #wrapper {
 	position: absolute;
@@ -52,7 +52,7 @@ a {
 	margin: ($margin * 20) auto;
 	position: relative;
 	max-width: $pageSize;
-	padding: $pad * 20;
+	padding: $pad * 15;
 }
 
 .head {
@@ -110,13 +110,13 @@ a {
 		border-bottom: 2px dashed;
 	}
 	article {
-		margin-top: $margin * 5;
+		margin-top: $margin * 8;
 		&:first-of-type {
 			margin-right: $margin * 8;
 		}
 	}
 	h3 {
-		font-size: 1.214rem;
+		font-size: 1.095rem;
 		font-weight: 700;
 		display: flex;
 		align-items: center;
@@ -125,6 +125,7 @@ a {
 	.date {
 		font-size: 0.88rem;
 		font-weight: 700;
+		white-space: nowrap;
 	}
 	p {
 		font-size: $textSize;
@@ -140,12 +141,12 @@ a {
 		display: inline-block;
 		text-decoration: none;
 		border: 1px solid;
-		padding: ($pad / 7) ($pad * 4);
-		font-size: 0.86rem;
+		padding: ($pad / 7) ($pad * 2);
+		font-size: 0.75rem;
 		margin-left: $margin * 3;
 		border-radius: $rad;
 		font-weight: normal;
-		&:first-of-type {
+		&:first-of-type:not(a) {
 			margin-left: 0;
 		}
 	}

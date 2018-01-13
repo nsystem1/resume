@@ -1,5 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Experience from 'components/experience';
+import Education from 'components/education';
+import Projects from 'components/projects';
 
 const STORE_KEY = 'USE_DARK_MODE';
 
@@ -75,68 +78,9 @@ class Resume extends React.Component {
 							problems.
 						</p>
 					</section>
-					<section className="section">
-						<h2>Experience</h2>
-						<div className="flex">
-							<article className="flex-item">
-								<h3>
-									Front-End Engineer Facebook <small className="date">2018-2020</small>
-								</h3>
-								<p>
-									I was a part of the team that used the MEAN stack (MongoDB, Express.js, AngularJS, and Node.js) to develop an internal application to help Andela track and manage ed
-									support Andela's Now We Give initiative, a program that offers to build websites for clients in exchange for charitable donations.
-								</p>
-								<div className="tags">
-									<span className="tag-item">css</span>
-									<span className="tag-item">html</span>
-								</div>
-							</article>
-							<article className="flex-item">
-								<h3>
-									Front-End Engineer Facebook <small className="date">2018-2020</small>
-								</h3>
-								<p>
-									I was a part of the team that used the MEAN stack (MongoDB, Express.js, AngularJS, and Node.js) to develop an internal applicatioor clients in exchange for charitable
-									donations.
-								</p>
-								<div className="tags">
-									<span className="tag-item">css</span>
-									<span className="tag-item">html</span>
-								</div>
-							</article>
-						</div>
-					</section>
-					<section className="section">
-						<h2>Experience</h2>
-						<div className="flex">
-							<article className="flex-item">
-								<h3>
-									Front-End Engineer Facebook <small className="date">2018-2020</small>
-								</h3>
-								<p>
-									I was a part of the team that used the MEAN stack (MongoDB, Express.js, AngularJS, and Node.js) to develop an internal application to help Andela track and manage ed
-									support Andela's Now We Give initiative, a program that offers to build websites for clients in exchange for charitable donations.
-								</p>
-								<div className="tags">
-									<span className="tag-item">css</span>
-									<span className="tag-item">html</span>
-								</div>
-							</article>
-							<article className="flex-item">
-								<h3>
-									Front-End Engineer Facebook <small className="date">2018-2020</small>
-								</h3>
-								<p>
-									I was a part of the team that used the MEAN stack (MongoDB, Express.js, AngularJS, and Node.js) to develop an internal applicatioor clients in exchange for charitable
-									donations.
-								</p>
-								<div className="tags">
-									<span className="tag-item">css</span>
-									<span className="tag-item">html</span>
-								</div>
-							</article>
-						</div>
-					</section>
+					<Experience />
+					<Education />
+					<Projects />
 				</main>
 			</div>
 		);
