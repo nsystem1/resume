@@ -1,4 +1,4 @@
-git push origin master &&
+npm run pdf && git add . && git commit -m "new build" && git push origin master &&
 
 git checkout gh-pages &&
 
