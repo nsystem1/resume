@@ -12,13 +12,13 @@ const config = {
 	orientation: 'portrait'
 };
 
-const html = ReactDOMServer.renderToString(<Resume />);
+const HTML = ReactDOMServer.renderToString(<Resume />);
 
 fs.readFile('./index.html', 'utf8', (err, data) => {
 	if (err) throw err;
 
 	const document = data
-		.replace(/<div id="main" class="responsive"><\/div>/, `<div id="main" class="printer"${html}</div>`)
+		.replace(/<div id="main" class="responsive"><\/div>/, `<div id="main" class="printer"${HTML}</div>`)
 		.replace(/.\/dist\/bundle.js/, 'http://localhost:9090/dist/bundle.js');
 
 	pdf.create(document, config).toFile('./resume.pdf', (err, res) => {
