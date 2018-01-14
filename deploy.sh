@@ -2,7 +2,7 @@ git push origin master &&
 
 git checkout gh-pages &&
 
-GIT_MERGE_AUTOEDIT=no git merge -m master &&
+GIT_MERGE_AUTOEDIT=no git merge master &&
 
 rm -rf dist &&
 
