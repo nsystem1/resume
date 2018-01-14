@@ -1,4 +1,6 @@
 @import 'reset';
+@import '~normalize-scss/sass/_normalize.scss';
+@import '~mdi/css/materialdesignicons.min.css';
 @import url('https://fonts.googleapis.com/css?family=Lato:700|Roboto');
 
 body {
@@ -25,3 +27,4 @@ h5 {
 @import 'dark-theme';
 @import 'switch';
 @import 'responsive';
+@import 'print';

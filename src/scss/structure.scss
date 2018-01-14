@@ -111,11 +111,13 @@ a {
 	}
 	article {
 		margin-top: $margin * 8;
+		max-width: 493px;
 		&:first-of-type {
 			margin-right: $margin * 8;
 		}
 	}
 	h3 {
+		position: relative;
 		font-size: 1.095rem;
 		font-weight: 700;
 		display: flex;

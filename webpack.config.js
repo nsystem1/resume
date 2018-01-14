@@ -79,7 +79,7 @@ const config = {
 					}
 				]
 			},
-			{ test: /\.css$/, exclude: /node_modules/, loader: ['css-loader'] },
+			{ test: /\.css$/, loader: ['css-loader'] },
 			{ test: /\.jsx?$/, exclude: /node_modules/, loader: ['babel-loader'] },
 			{ test: /\.json$/, exclude: /node_modules/, loader: 'json' },
 			{ test: /\.(png|jpg|gif)$/, loader: 'file-loader?limit=100000' },
