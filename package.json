@@ -5,7 +5,7 @@
 	"main": "webpack.config.js",
 	"scripts": {
 		"dev": "NODE_ENV=development nodemon server.js",
-		"build": "NODE_ENV=production rm -rf builds && webpack --config webpack.config.js --progress --colors"
+		"build": "rm -rf dist && NODE_ENV=production webpack --config webpack.config.js --progress --colors"
 	},
 	"repository": {
 		"type": "git",
