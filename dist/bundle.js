@@ -61,7 +61,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "e28e4855f58fed228a19"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "ea64ae2f9fda2af237ee"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -30214,7 +30214,7 @@ var Experience = function Experience() {
 					_react2.default.createElement(
 						'small',
 						{ className: 'date' },
-						'Jun 2011 - Aug 2014'
+						'Jun 2014 - Aug 2014'
 					)
 				),
 				_react2.default.createElement(
