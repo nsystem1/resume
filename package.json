@@ -4,7 +4,7 @@
 	"description": "My resume",
 	"main": "webpack.config.js",
 	"scripts": {
-		"pdf": "rm -rf resume.pdf && rm -rf dist && NODE_ENV=production webpack --config webpack.config.js --progress --colors && babel-node make-pdf.js && rm -rf dist",
+		"pdf": "rm -rf resume.pdf && babel-node make-pdf.js",
 		"dev": "NODE_ENV=development nodemon server.js",
 		"build": "rm -rf dist && NODE_ENV=production webpack --config webpack.config.js --progress --colors"
 	},
