@@ -104,6 +104,7 @@ if (ENVIRONMENT === 'development') {
 	const options = {
 		sourceMap: true,
 		comments: false,
+		minimize: true,
 		compress: {
 			drop_console: true
 		}
