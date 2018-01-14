@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Experience from 'components/experience';
-import Education from 'components/education';
-import Projects from 'components/projects';
-import Awards from 'components/awards';
+import Experience from './experience.jsx';
+import Education from './education.jsx';
+import Projects from './projects.jsx';
+import Awards from './awards.jsx';
 
 const STORE_KEY = 'USE_DARK_MODE';
 
@@ -13,14 +13,18 @@ class Resume extends React.Component {
 	};
 
 	componentWillMount() {
-		const checked = localStorage.getItem(STORE_KEY) || false;
-		this.setState({ checkedInput: JSON.parse(checked) });
+		if (typeof localStorage !== 'undefined') {
+			const checked = localStorage.getItem(STORE_KEY) || false;
+			this.setState({ checkedInput: JSON.parse(checked) });
+		}
 	}
 
 	handleToggle = () => {
-		const checkedInput = !this.state.checkedInput;
-		localStorage.setItem(STORE_KEY, checkedInput);
-		this.setState({ checkedInput });
+		if (typeof localStorage !== 'undefined') {
+			const checkedInput = !this.state.checkedInput;
+			localStorage.setItem(STORE_KEY, checkedInput);
+			this.setState({ checkedInput });
+		}
 	};
 
 	render() {
@@ -42,7 +46,7 @@ class Resume extends React.Component {
 							<h1>Udoka Kenneth Nkwocha</h1>
 						</div>
 						<div className="flex-item">
-							<a className="download-btn" href="./public/resume.pdf">
+							<a className="download-btn" href="./resume.pdf">
 								<i className="mdi mdi-file-pdf" /> Download PDF
 							</a>
 						</div>
@@ -63,7 +67,7 @@ class Resume extends React.Component {
 						<span className="flex-item">
 							<a className="contact-item" href="https://github.com/Udokah">
 								<i className="mdi mdi-github-circle" />
-								&nbsp;/udoka
+								&nbsp;/udokah
 							</a>
 						</span>
 						<span className="flex-item">

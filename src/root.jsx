@@ -2,7 +2,6 @@ import 'babel-polyfill';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Resume from 'components/resume';
-import 'normalize-scss';
 import 'scss/style.scss';
 
 const rootElement = document.querySelector('#main');
