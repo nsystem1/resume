@@ -10,6 +10,8 @@ const app = express();
 const ENVIRONMENT = process.env.NODE_ENV;
 const port = 9090;
 
+app.use(express.static('dist'));
+
 if (ENVIRONMENT === 'development') {
 	// Attach webpack dev server to running app
 	(serverInstance => {

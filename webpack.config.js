@@ -2,6 +2,7 @@
 
 const ENVIRONMENT = process.env.NODE_ENV;
 const webpack = require('webpack');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const path = require('path');
 const autoprefixer = require('autoprefixer');
 
@@ -48,7 +49,8 @@ const config = {
 			}
 		}),
 		new webpack.DefinePlugin({ 'global.GENTLY': false }),
-		new webpack.NoEmitOnErrorsPlugin()
+		new webpack.NoEmitOnErrorsPlugin(),
+		new ExtractTextPlugin('style.css')
 	],
 
 	resolve: {
@@ -63,23 +65,22 @@ const config = {
 		rules: [
 			{
 				test: /\.scss$/,
-				use: [
-					{ loader: 'style-loader' },
-					{
-						loader: 'css-loader',
-						options: { minimize: true, importLoaders: 1 }
-					},
-					postCSSLoader,
-					{
-						loader: 'sass-loader',
-						options: {
-							includePaths: [path.resolve(__dirname, './node_modules/compass-mixins/lib')],
-							sourceMap: true
-						}
-					}
-				]
+				use: ExtractTextPlugin.extract({
+					use: [{ loader: 'css-loader', options: { minimize: true, importLoaders: 1 } }, postCSSLoader, { loader: 'sass-loader' }]
+				})
 			},
-			{ test: /\.css$/, loader: ['css-loader'] },
+			{
+				test: /\.css$/,
+				use: ExtractTextPlugin.extract({
+					fallback: 'style-loader',
+					use: [
+						{
+							loader: 'css-loader',
+							options: { minimize: true, importLoaders: 1 }
+						}
+					]
+				})
+			},
 			{ test: /\.jsx?$/, exclude: /node_modules/, loader: ['babel-loader'] },
 			{ test: /\.json$/, exclude: /node_modules/, loader: 'json' },
 			{ test: /\.(png|jpg|gif)$/, loader: 'file-loader?limit=100000' },
@@ -96,6 +97,27 @@ if (ENVIRONMENT === 'development') {
 	config.entry.bundle.unshift('webpack-hot-middleware/client');
 	config.entry.bundle.unshift('webpack/hot/dev-server');
 	config.plugins.push(new webpack.HotModuleReplacementPlugin());
+
+	config.module.rules[0] = {
+		test: /\.scss$/,
+		use: [
+			{ loader: 'style-loader' },
+			{
+				loader: 'css-loader',
+				options: { minimize: true, importLoaders: 1 }
+			},
+			postCSSLoader,
+			{
+				loader: 'sass-loader',
+				options: {
+					includePaths: [path.resolve(__dirname, './node_modules/compass-mixins/lib')],
+					sourceMap: true
+				}
+			}
+		]
+	};
+
+	config.module.rules[1] = { test: /\.css$/, exclude: /node_modules/, loader: ['css-loader'] };
 } else {
 	/**
 	 * PRODUCTION!
