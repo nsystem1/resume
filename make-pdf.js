@@ -19,7 +19,8 @@ fs.readFile('./index.html', 'utf8', (err, data) => {
 
 	const document = data
 		.replace(/<div id="main" class="responsive"><\/div>/, `<div id="main" class="printer"${HTML}</div>`)
-		.replace(/.\/dist\/bundle.js/, 'http://localhost:9090/dist/bundle.js');
+		.replace(/.\/dist\/style.css/, 'http://localhost:9090/dist/style.css')
+		.replace(/<script src=".\/dist\/bundle.js" defer><\/script>/, '');
 
 	pdf.create(document, config).toFile('./resume.pdf', (err, res) => {
 		if (err) return console.log(err);
