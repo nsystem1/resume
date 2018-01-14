@@ -102,7 +102,7 @@ const Experience = () => {
 			<div className="flex">
 				<article className="flex-item">
 					<h3>
-						Frontend Developer at Botosoft Tech LTD <small className="date">Jun 2011 - Aug 2014</small>
+						Frontend Developer at Botosoft Tech LTD <small className="date">Jun 2014 - Aug 2014</small>
 					</h3>
 					<p>
 						Onsite consulting. I worked closely with UI designers to create awesome user interfaces offering an intuitive user experience. My roles involved tranforming designs and sketches
