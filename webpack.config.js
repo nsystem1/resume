@@ -97,6 +97,27 @@ if (ENVIRONMENT === 'development') {
 	config.entry.bundle.unshift('webpack-hot-middleware/client');
 	config.entry.bundle.unshift('webpack/hot/dev-server');
 	config.plugins.push(new webpack.HotModuleReplacementPlugin());
+
+	config.module.rules[0] = {
+		test: /\.scss$/,
+		use: [
+			{ loader: 'style-loader' },
+			{
+				loader: 'css-loader',
+				options: { minimize: true, importLoaders: 1 }
+			},
+			postCSSLoader,
+			{
+				loader: 'sass-loader',
+				options: {
+					includePaths: [path.resolve(__dirname, './node_modules/compass-mixins/lib')],
+					sourceMap: true
+				}
+			}
+		]
+	};
+
+	config.module.rules[1] = { test: /\.css$/, exclude: /node_modules/, loader: ['css-loader'] };
 } else {
 	/**
 	 * PRODUCTION!
