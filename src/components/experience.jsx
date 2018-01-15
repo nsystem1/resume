@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom';
 const Experience = () => {
 	return (
 		<section className="section">
-			<h2>Experience</h2>
+			<h2>Relevant Experience</h2>
 			<div className="flex">
 				<article className="flex-item">
 					<h3>
