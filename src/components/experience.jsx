@@ -11,8 +11,8 @@ const Experience = () => {
 						Software Engineer (Front-End) at Zalando SE <small className="date">Feb 2017 - Present</small>
 					</h3>
 					<p>
-						Working on tools to increase developer productivity. Building apps using Micro-service for frontend architecture. Setup monitoring and tracking to gain more insights & visibility
-						into user behaviour.
+						Developing complex interfaces for developer tools, building measurements of user behavior on Web applications and
+						processes used for collecting key metrics across multiple user interfaces, while experimenting with <strong>micro-services for frontend architecture.</strong>
 					</p>
 					<div className="tags">
 						<span className="tag-item">NodeJS</span>

@@ -80,7 +80,8 @@ class Resume extends React.Component {
 					<section className="pitch">
 						<p>
 							Passionate about learning and building stuff for the web. Able to understand business requirements, prioritise work based on highest business value and work with teams to solve
-							problems.
+							problems. <br />
+							In-depth knowledge of JavaScript and web technologies. Experience building RESTful API's on the backend with NodeJS, MySQL & MongoDB.
 						</p>
 					</section>
 					<Experience />
