@@ -8,7 +8,7 @@ const Experience = () => {
 			<div className="flex">
 				<article className="flex-item">
 					<h3>
-						Software Engineer (Front-End) at Zalando SE <small className="date">Feb 2017 - Present</small>
+						Software Engineer (Frontend) at Zalando SE <small className="date">Feb 2017 - Present</small>
 					</h3>
 					<p>
 						Working on tools to increase developer productivity while experimenting with Micro-services for frontend.
