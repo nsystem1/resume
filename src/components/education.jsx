@@ -10,7 +10,7 @@ const Education = () => {
 				<h3>
 					University of Nigeria Nnsukka <small className="date">2009 - 2013</small>
 				</h3>
-				<p>Degree in Computer Science and Education, final year project a result management application.</p>
+				<p>Bachelor's Degree, Computer Science and Education.</p>
 			</article>
 		</section>
 	);
