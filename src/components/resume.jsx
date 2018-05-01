@@ -79,13 +79,9 @@ class Resume extends React.Component {
 					</section>
 					<section className="pitch">
 						<p>
-							I am passionate about learning & improving my skills and also building stuff for the web. <br />
-							Solid understanding of Javascript. <br />
-							Solid knowledge of HTML5 & CSS3. <br />
-							Understand responsive design and cross-browser compatibility issues. <br />
-							Able to understand business requirements, prioritise work based on highest business value and work with teams to solve
-							problems. <br />
-							Experience building RESTful API's.
+						Passionate about learning and building stuff for the web. Able to understand business requirements, prioritise work based on highest business value and work with teams to solve
+						problems. <br />
+						In-depth knowledge of JavaScript and web technologies. Experience building RESTful API's on the backend with NodeJS, MySQL & MongoDB.
 						</p>
 					</section>
 					<Experience />
