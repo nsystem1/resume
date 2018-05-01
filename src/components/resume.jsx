@@ -53,9 +53,9 @@ class Resume extends React.Component {
 					</section>
 					<section className="flex contact">
 						<span className="flex-item">
-							<a className="contact-item" href="http://udoka.me/">
+							<a className="contact-item" href="https://udoka.me/">
 								<i className="mdi mdi-earth" />
-								&nbsp;http://udoka.me/
+								&nbsp;https://udoka.me/
 							</a>
 						</span>
 						<span className="flex-item">
