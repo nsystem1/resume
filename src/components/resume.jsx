@@ -81,7 +81,7 @@ class Resume extends React.Component {
 						<p>
 							I am passionate about learning & improving my skills and also building stuff for the web. <br />
 							Solid understanding of Javascript. <br />
-							Expert-level knowledge of HTML5 & CSS3. <br />
+							Solid knowledge of HTML5 & CSS3. <br />
 							Understand responsive design and cross-browser compatibility issues. <br />
 							Able to understand business requirements, prioritise work based on highest business value and work with teams to solve
 							problems. <br />
