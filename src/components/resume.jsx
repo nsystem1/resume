@@ -78,11 +78,14 @@ class Resume extends React.Component {
 						</span>
 					</section>
 					<section className="pitch">
-						<p>
-						Passionate about learning and building stuff for the web. Able to understand business requirements, prioritise work based on highest business value and work with teams to solve
-						problems. <br />
-						In-depth knowledge of JavaScript and web technologies. Experience building RESTful API's on the backend with NodeJS, MySQL & MongoDB.
-						</p>
+						<ul>
+							<li>Advanced JavaScript developer (React/Redux, AngularJS, jQuery, Vanilla) </li>
+							<li>CSS expert (SASS, LESS) </li>
+							<li>Proficient at building responsive design & handling cross-browser compatibility issues.</li>
+							<li>Experienced working with & developing RESTful API's with NodeJS/MongoDB/MySql </li>
+							<li>Good working knowledge of cloud computing (Azure, Continuous Integration/deployment)</li>
+							<li>Good understading of basic <a target="_blank" href="https://github.com/Udokah/javascript-playground">Computer Science fundamentals.</a></li>
+						</ul>
 					</section>
 					<Experience />
 					<Education />
