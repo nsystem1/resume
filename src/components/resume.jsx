@@ -79,7 +79,7 @@ class Resume extends React.Component {
 					</section>
 					<section className="pitch">
 						<ul>
-							<li>Proficient JavaScript developer (React/Redux, AngularJS, jQuery, Vanilla) </li>
+							<li>Experienced JavaScript developer (React/Redux, AngularJS, jQuery, Vanilla) </li>
 							<li>CSS expert (SASS, LESS) </li>
 							<li>Proficient at building responsive design & handling cross-browser compatibility issues.</li>
 							<li>Experienced working with & developing RESTful API's with NodeJS/MongoDB/MySql </li>
