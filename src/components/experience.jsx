@@ -76,7 +76,7 @@ const Experience = () => {
 				</article>
 				<article className="flex-item">
 					<h3>
-						Full-stack Developer at UDCreate LTD<small className="date">Jan 2013 - Feb 2015</small>
+						Full-stack Developer at UDCreate LTD<small className="date">Sep 2013 - Jan 2015</small>
 					</h3>
 					<p>Remote/Onsite consulting for tools & apps owned by small and medium scale businesses. Built & maintained over 15+ projects for happy clients.</p>
 					<div className="tags">
@@ -99,24 +99,6 @@ const Experience = () => {
 				</article>
 			</div>
 			<div className="flex">
-				<article className="flex-item">
-					<h3>
-						Frontend Developer at Botosoft Tech LTD <small className="date">Jun 2014 - Aug 2014</small>
-					</h3>
-					<p>
-						Onsite consulting. I worked closely with UI designers to create awesome user interfaces offering an intuitive user experience. My roles involved tranforming designs and sketches
-						to semantic HTML/CSS code equivalent.
-					</p>
-					<div className="tags">
-						<span className="tag-item">HTML5</span>
-						<span className="tag-item">CSS3</span>
-						<span className="tag-item">Javascript</span>
-						<span className="tag-item">jQuery</span>
-						<a href="http://www.botosoft.com/" target="_blank" className="tag-item">
-							<i className="mdi mdi-earth" /> www.botosoft.com
-						</a>
-					</div>
-				</article>
 				<article className="flex-item">
 					<h3>
 						Full-stack Developer (Intern) at SME Funds<small className="date">Mar 2012 - Aug 2013</small>
