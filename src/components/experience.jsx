@@ -76,7 +76,7 @@ const Experience = () => {
 				</article>
 				<article className="flex-item">
 					<h3>
-						Full-stack Developer at UDCreate LTD<small className="date">Sep 2013 - Jan 2015</small>
+						Full-stack Developer (Freelance) at UDCreate<small className="date">Sep 2013 - Jan 2015</small>
 					</h3>
 					<p>Remote/Onsite consulting for tools & apps owned by small and medium scale businesses. Built & maintained over 15+ projects for happy clients.</p>
 					<div className="tags">
