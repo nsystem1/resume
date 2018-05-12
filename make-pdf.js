@@ -7,9 +7,15 @@ import Resume from './src/components/resume.jsx';
 const config = {
 	format: 'A4',
 	renderDelay: 1000,
-	height: '950px',
-	width: '1420px',
-	orientation: 'portrait'
+	height: '1070px',
+	width: '1000px',
+	orientation: 'portrait',
+	"border": {
+    "top": "20px",         
+    "right": "0",
+    "bottom": "20px",
+    "left": "0"
+  },
 };
 
 const HTML = ReactDOMServer.renderToString(<Resume />);
