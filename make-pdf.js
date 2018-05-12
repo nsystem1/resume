@@ -8,12 +8,12 @@ const config = {
 	format: 'A4',
 	renderDelay: 1000,
 	height: '1070px',
-	width: '1000px',
+	width: '1200px',
 	orientation: 'portrait',
 	"border": {
-    "top": "20px",         
+    "top": "0",         
     "right": "0",
-    "bottom": "20px",
+    "bottom": "0",
     "left": "0"
   },
 };
