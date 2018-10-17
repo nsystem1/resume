@@ -12,7 +12,9 @@
 		"type": "git",
 		"url": "git+https://github.com/Udokah/resume.git"
 	},
-	"keywords": ["Resume"],
+	"keywords": [
+		"Resume"
+	],
 	"author": "Udo Nkwocha",
 	"license": "ISC",
 	"bugs": {
