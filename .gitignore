@@ -3,10 +3,6 @@ logs
 *.log
 npm-debug.log*
 
-builds
-
-public/builds
-
 .retry
 
 .env
